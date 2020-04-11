@@ -54,7 +54,7 @@ public class TicTacToe extends Application {
     private boolean checkState() {
         boolean gap = this.logic.hasGap();
         if (!gap) {
-            this.showAlert("Все поля запонены! Начните новую Игру!");
+            this.showAlert("Все поля заполнены! Начните новую Игру!");
         }
         return gap;
     }
@@ -71,7 +71,7 @@ public class TicTacToe extends Application {
         Group group = new Group();
         group.getChildren().addAll(
                 new Line(
-                        x + 10, y  + 10,
+                        x + 10, y + 10,
                         x + size - 10, y + size - 10
                 ),
                 new Line(
